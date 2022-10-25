@@ -1,0 +1,77 @@
+body{
+    background-color: #276b62;
+    color: rgb(255, 255, 255);
+    font-family: 'Gemunu Libre', sans-serif;
+    margin: 20px;
+}
+header{
+    background-color: rgb(30, 18, 82);
+    color: rgb(255, 255, 255);
+    font-family: 'Gemunu Libre', sans-serif;
+    text-align: center;
+    margin: 15px;
+    padding: 2px;
+}
+h2{
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid rgb(30, 18, 82);
+    border-radius: 5px;
+}
+footer{
+    background-color: rgb(30, 18, 82);
+    color: rgb(255, 255, 255);
+    font-family: 'Gemunu Libre', sans-serif;
+    text-align: center;
+    margin: 50px;
+    padding: 1px;
+}
+nav{
+    overflow: hidden;
+    background-color: rgb(21, 33, 71);
+    padding: 20px 10px;
+}
+nav a{
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,3fr);
+    grid-gap: 1em;
+    grid-template-rows: minmax(20px auto);
+    padding: 25px;
+}
+.contenedor div{
+    background-color: rgb(45, 68, 35);
+    color: rgb(94, 167, 167);
+    padding: 2em;
+    font-size: 21px;
+}
+.contenedor div:hover{
+    border: 5px solid rgb(0, 0, 0) ;
+}
+@media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:12px;
+      }
+      .container div {
+        background: #25684c;
+        padding: 1em;
+      }
+      .container div:hover {
+        border: 2px solid rgb(136, 224, 205);
+      }
+   
+  }
